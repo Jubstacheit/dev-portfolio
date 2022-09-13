@@ -182,25 +182,91 @@
 
 <!-- Contact section -->
 
+<section class="contact" id="contact">
+    <h2>Contact me</h2>
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mdojaqnj" method="POST">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter Your Name"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="sender-email"
+                            placeholder="Enter Your Email"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            cols="60"
+                            rows="10"
+                            placeholder="Enter Your Message"
+                            name="message"
+                            class="input-field"
+                            required
+                    ></textarea>
+                </div>
+                <input
+                        type="submit"
+                        value="Submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                />
+            </form>
+        </div>
+    </div>
+</section>
+
+
 <!-- Social accounts - Fixed to the right -->
 
-<!-- Scroll to top -->
+<div class="socials">
+    <a href="#" target="_blank"
+    ><img
+            src="assets/icons/icons8-linkedin-material-filled/icons8-linkedin-240.svg"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+    /></a>
+    <a href="#" target="_blank"
+    ><img src="assets/icons/icons8-github-material-filled/icons8-github-240.svg"
+          alt="Github"
+          class="socicon"
+          loading="lazy"
+    /></a>
+</div>
 
-<i class="scroll-up" id="scroll-up"
-><img
-        src="assets/icons/icons8-scroll-up-material-filled/icons8-scroll-up-96.png"
-        class="socicon up-arrow"
-        alt="scroll-up"
-/></i>
+<!-- Footer -->
 
-<!-- Footer section -->
+<footer>
+    <p class="copy">&copy; Copyright 2022</p>
+    <p class="copy">
+        Built with <a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/#howtobuildtheprojectssection">Freecodecamp</a> by <a href="https://twitter.com/koladechris">Kolade Chris (Ksound)</a>
+    </p>
+</footer>
 
-<a href="https://icons8.com/">Icons : https://icons8.com/</a>
 
 <!-- Website scripts -->
+
 <script src="assets/js/app.js"></script>
 
 <!-- Ion icons scripts -->
+
 <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
