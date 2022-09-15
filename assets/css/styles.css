@@ -117,6 +117,7 @@ nav ul li {
 }
 
 .hero img {
+    border-radius: 1rem;
     height: 37.5rem;
     width: 37.5rem;
 }
@@ -338,4 +339,54 @@ footer {
     padding: 1.25rem;
     text-align: center;
     margin: 2rem 0 0;
+}
+
+/* MEDIA QUERIES AND BREAKPOINTS */
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .bio {
+        margin-top: 1rem;
+        width: 20.5rem;
+    }
+
 }
