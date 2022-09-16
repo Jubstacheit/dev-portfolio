@@ -19,7 +19,7 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: rgb(32, 32, 32);
+    --bg-color: rgb(3, 0, 4);
     --primary-color: #be47df;
     --secondary-color: rgb(88, 62, 255);
     --primary-shadow: #1d004f;
@@ -31,12 +31,10 @@
 }
 
 
-
 html {
     scroll-behavior: smooth;
+    background-color: var(--bg-color);
 }
-
-/* CSS resets  */
 
 * {
     margin: 0;
@@ -60,6 +58,10 @@ a:hover {
 body {
     font-family: var(--font-family);
 }
+
+
+
+/* Background */
 
 /* Nav */
 
