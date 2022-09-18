@@ -12,7 +12,7 @@
     <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="assets/icons/apple-touch-icon.jpeg"
+            href="assets/icons/favicon.jpeg"
     />
     <link
             rel="icon"
@@ -38,14 +38,11 @@
     <nav>
         <h1>Viviane DESSAINT</h1>
         <ul>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#about" class="nav-link">A propos</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
-        <button class="burger-menu" id="burger-menu">
-            <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
     </nav>
 
 <!-- Hero Section -->
@@ -57,47 +54,25 @@
             loading="lazy"
             class="hero-img"
     />
-    <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
+    <div class="bio">
+        <h2 class="bio-title">A propos de moi</h2>
         <p class="bio-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-            inventore tempore minus nemo, iste ullam illo laboriosam maiores
-            repudiandae quos!
+            Viviane, 21 ans, diplômée d'un DUT Métiers du Multimédia et des Internet. Je suis actuellement en
+            recherche d'alternance pour 1 an dans le cadre de mon cursus Développement Web/Applications
+            à l'école ISCOD.
         </p>
     </div>
 </section>
 
 
-<!-- More about -->
-
-<section class="more-about">
-    <h2>More About Me</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-    </p>
-</section>
-
-
 <!-- Skills section -->
-<!-- Icons by Icons8 https://icons8.com/icon/-->
+<!-- Icons from Icons8 https://icons8.com/icon/-->
 
 <section class="skills" id="skills">
-    <h2 class="skill-header">My Top Skills</h2>
+    <h2 class="skill-header">Mes compétences</h2>
 
     <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+        <div>
             <img
                     src="assets/icons/icons8-html-5-ios-filled/icons8-html-5-250.svg"
                     alt="html5"
@@ -118,7 +93,7 @@
             />
         </div>
 
-        <div class="second-set animate__animated animate__pulse">
+        <div>
             <img
                     src="assets/icons/icons8-php-logo-ios-filled/icons8-php-logo-250.svg"
                     alt="php"
@@ -145,24 +120,24 @@
 <!-- Projects section -->
 
 <section class="projects" id="projects">
-    <h2 class="projects-title">Projects</h2>
+    <h2 class="projects-title">Mes projets</h2>
     <div class="projects-container">
-        <div class="project-container project-card">
+        <div class="project-container project-card" onclick="location.href='https://www.unidice.fr/';" style="cursor: pointer;">
             <img
                     src="assets/images/firstProject.png"
                     alt="first-project"
                     loading="lazy"
                     class="project-pic"
             />
-            <h3 class="project-title">First project</h3>
+            <h3 class="project-title">Unidice - par Cri8</h3>
             <p class="project-details">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-                ratione vel inventore labore commodi modi quos culpa aut saepe!
-                Alias!
+                Dans le cadre de notre projet tutoré de MMI, j'ai réalisé, avec mon équipe Cri8, une plateforme
+                de type SaaS pour créer, partager et jouer des parties de Jeux de Rôle en ligne, à la manière de Role20.
+                J'ai participé à la communication ainsi qu'à une partie du front-end du site. Le projet a évolué sur 2
+                ans et exploite JavaScript et PHP.
             </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
         </div>
-        <div class="project-container project-card">
+        <!--<div class="project-container project-card">
             <img
                     src="assets/images/secondProject.png"
                     alt="second-project"
@@ -176,7 +151,7 @@
                 Alias!
             </p>
             <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -184,17 +159,17 @@
 <!-- Contact section -->
 
 <section class="contact" id="contact">
-    <h2>Contact me</h2>
+    <h2>Contactez moi</h2>
     <div class="contact-form-container">
         <div class="contact-form">
             <form action="https://formspree.io/f/mdojaqnj" method="POST">
                 <div class="form-control">
-                    <label for="name">Name</label>
+                    <label for="name">Nom</label>
                     <input
                             type="text"
                             id="name"
                             name="sender-name"
-                            placeholder="Enter Your Name"
+                            placeholder="Entrez votre nom"
                             class="input-field"
                             required
                     />
@@ -205,7 +180,7 @@
                             type="email"
                             id="email"
                             name="sender-email"
-                            placeholder="Enter Your Email"
+                            placeholder="Entrez votre mail"
                             class="input-field"
                             required
                     />
@@ -216,7 +191,7 @@
                             id="message"
                             cols="60"
                             rows="10"
-                            placeholder="Enter Your Message"
+                            placeholder="Entrez votre message"
                             name="message"
                             class="input-field"
                             required
@@ -224,7 +199,7 @@
                 </div>
                 <input
                         type="submit"
-                        value="Submit"
+                        value="Envoyer"
                         id="submit-btn"
                         class="submit-btn"
                 />
@@ -239,13 +214,13 @@
 <div class="socials">
     <a href="https://www.linkedin.com/in/vivianedessaint" target="_blank"
     ><img
-            src="assets/icons/icons8-linkedin-material-filled/icons8-linkedin-240.svg"
+            src="assets/icons/icons8-linkedin.svg"
             alt="Linkedin"
             loading="lazy"
             class="socicon"
     /></a>
     <a href="https://github.com/Jubstacheit/" target="_blank"
-    ><img src="assets/icons/icons8-github-material-filled/icons8-github-240.svg"
+    ><img src="assets/icons/icons8-github.svg"
           alt="Github"
           class="socicon"
           loading="lazy"
@@ -256,34 +231,21 @@
 
 <i class="scroll-up" id="scroll-up"
 ><img
-        src="assets/icons/icons8-scroll-up-material-filled/icons8-scroll-up-96.png"
-        class="socicon up-arrow"
+        src="assets/icons/icons8-slide-up-96.png"
+        class="up-arrow"
         alt="scroll-up"
 /></i>
 
 <!-- Footer -->
 
 <footer>
-    <p class="copy">&copy; Copyright 2022</p>
-    <p class="copy">
-        Built with <a href="https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/#howtobuildtheprojectssection">Freecodecamp</a> by <a href="https://twitter.com/koladechris">Kolade Chris (Ksound)</a>
-    </p>
+    <p>Viviane DESSAINT, 2022</p>
+    <p>Icons from <a href="https://icons8.com/icon/">Icons8</a></p>
 </footer>
 
 
 <!-- Website scripts -->
 
 <script src="assets/js/app.js"></script>
-
-<!-- Ion icons scripts -->
-
-<script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-></script>
 </body>
 </html>
