@@ -157,6 +157,7 @@ nav ul li
 .bio a
   color: var(--secondary-shadow)
   font-weight: var(--bold-font)
+  font-size: var(--mobile-font-size)
 
 .bio a:hover
   transition: var(--transition)
@@ -199,10 +200,28 @@ nav ul li
   font-weight: var(--bold-font)
   color: var(--primary-color)
 
+.skills h3
+  font-size: var(--mobile-font-size-h3)
+  font-weight: var(--bold-font)
+  color: var(--primary-color)
+
 
 .skill-header
   margin-bottom: var(--bottom-margin)
 
+.skill-container
+  text-align: center
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+.skill-container h3
+  justify-content: flex-start
+
+.skills-wrapper
+  display: flex
+  flex-direction: column
 
 .skills-wrapper img
   padding: 0.3rem
@@ -439,11 +458,15 @@ footer a:hover
     flex-direction: row
   .bio
     padding: 0 5rem
-  .bio p
+  .bio ul
     font-size: var(--tablet-font-size)
     padding: 2rem
+  .bio a
+    font-size: var(--tablet-font-size)
   .skills h2
     font-size: var(--tablet-font-size-h2)
+  .skills h3
+    font-size: var(--tablet-font-size-h3)
   .icon
     width: 10rem
     height: 10rem
@@ -493,11 +516,15 @@ footer a:hover
   .bio
     padding: 0 5rem
     max-width: 40%
-  .bio p
+  .bio ul
     font-size: var(--desktop-font-size)
     padding: 2rem
+  .bio a
+    font-size: var(--desktop-font-size)
   .skills h2
     font-size: var(--desktop-font-size-h2)
+  .skills h3
+    font-size: var(--desktop-font-size-h3)
   .icon
     width: 12rem
     height: 12rem
