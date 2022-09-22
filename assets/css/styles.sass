@@ -115,7 +115,7 @@ nav ul li
 /* Hero */
 
 .hero
-  padding: 1rem 3rem
+  padding: 0 3rem
   display: flex
   flex-direction: column
   align-items: center
@@ -135,6 +135,9 @@ nav ul li
   width: 11rem
   height: 11rem
   transition: var(--transition)
+
+.bio-text
+  width: 20rem
 
 .bio h2
   margin-bottom: var(--bottom-margin)
@@ -169,7 +172,7 @@ nav ul li
   flex-direction: column
   align-items: center
   justify-content: center
-  margin-top: 5rem
+  margin-top: 1rem
 
 .CV-btn
   padding: 1rem 1rem
@@ -266,8 +269,11 @@ nav ul li
   display: flex
   flex-direction: row
   align-items: center
+  justify-content: center
   margin-right: auto
   margin-left: auto
+  padding-top: 5rem
+  width: 70%
 
 .projects
   display: flex
@@ -277,9 +283,11 @@ nav ul li
 
 
 .project-pic
-  width: 100%
+  width: 70%
   align-items: center
   margin-bottom: var(--bottom-margin)
+  border-radius: 1rem
+  border: 5px solid var(--primary-color)
 
 .projects-container
   display: flex
@@ -332,15 +340,26 @@ nav ul li
   border-radius: 10px
   box-shadow: 0 3px 10px var(--primary-shadow)
   padding: 2rem
+  margin-bottom: 5rem
 
 .project-icon
-  width: 10%
+  width: 30%
+  visibility: hidden
+  margin-left: 1rem
+  position: absolute
+  left: 0
+
+.project-card:hover .project-icon
+  visibility: visible
+
+.project-icon img
+  border-radius: 1rem
 
 /* Contact */
 
 .contact
-  margin-top: 10rem
   scroll-snap-align: start
+  width: 100%
 
 .contact h2
   text-align: center
@@ -351,9 +370,8 @@ nav ul li
 
 
 .contact-form-container
-  max-width: 90%
+  max-width: 80%
   margin: 0 auto
-  padding: 1rem
   border-radius: 5px
 
 
@@ -526,7 +544,8 @@ footer a:hover
     font-size: var(--desktop-font-size-h2)
   .bio
     padding: 0 5rem
-    max-width: 40%
+  .bio-text
+    width: 40rem
   .bio ul
     font-size: var(--desktop-font-size)
     padding: 2rem
@@ -548,8 +567,8 @@ footer a:hover
     font-size: var(--desktop-font-size-h3)
   .project-container p
     font-size: var(--desktop-font-size)
-  .contact
-    padding: 1rem 30rem
+  .contact-form-container
+    width: 40%
   .contact h2
     font-size: var(--desktop-font-size-h2)
   .contact-form-container label
