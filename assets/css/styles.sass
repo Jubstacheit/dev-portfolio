@@ -18,10 +18,10 @@
   --normal-font: 400
   --bold-font: 700
   --bolder-font: 900
-  --mobile-font-size: 14px
-  --mobile-font-size-h1: 30px
-  --mobile-font-size-h2: 25px
-  --mobile-font-size-h3: 20px
+  --mobile-font-size: 12px
+  --mobile-font-size-h1: 28px
+  --mobile-font-size-h2: 23px
+  --mobile-font-size-h3: 18px
   --tablet-font-size: 17px
   --tablet-font-size-h1: 33px
   --tablet-font-size-h2: 28px
@@ -42,8 +42,6 @@
 html
   scroll-behavior: smooth
   scroll-padding-top: 8rem
-  scroll-snap-type: both mandatory
-  scroll-snap-stop: always
   background-color: var(--bg-color)
 
 *
@@ -121,7 +119,6 @@ nav ul li
   align-items: center
   justify-content: center
   gap: 2rem
-  scroll-snap-align: start
 
 
 .hero img
@@ -194,7 +191,6 @@ nav ul li
   flex-direction: column
   align-items: center
   margin-bottom: var(--bottom-margin)
-  scroll-snap-align: start
 
 .skills h2
   font-size: var(--mobile-font-size-h2)
@@ -265,7 +261,6 @@ nav ul li
 
 .projects-section
   margin-bottom: var(--bottom-margin)
-  scroll-snap-align: start
   display: flex
   flex-direction: row
   align-items: center
@@ -358,7 +353,6 @@ nav ul li
 /* Contact */
 
 .contact
-  scroll-snap-align: start
   width: 100%
 
 .contact h2
@@ -393,7 +387,7 @@ nav ul li
   padding-bottom: 10px
   padding-left: 10px
   border-radius: 10px
-  font-size: 1rem
+  font-size: var(--mobile-font-size)
   outline: none
   background-color: var(--primary-shadow)
   font-family: "JetBrains Mono", sans-serif
@@ -408,7 +402,7 @@ nav ul li
   padding: 10px
   margin: 10px 0
   background-color: var(--primary-shadow)
-  font-size: var(--mobile-font-size-h3)
+  font-size: var(--mobile-font-size)
   font-weight: var(--bold-font)
   font-family: "JetBrains Mono", sans-serif
   transition: var(--transition)
@@ -442,7 +436,6 @@ footer
   padding: 1.25rem
   text-align: center
   margin: 2rem 0 0
-  scroll-snap-align: end
 
 footer p
   font-size: 11px
