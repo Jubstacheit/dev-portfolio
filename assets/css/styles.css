@@ -39,8 +39,9 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 11rem;
+  scroll-padding-top: 8rem;
   scroll-snap-type: both mandatory;
+  scroll-snap-stop: always;
   background-color: var(--bg-color);
 }
 
@@ -128,7 +129,6 @@ nav ul li {
   justify-content: center;
   gap: 2rem;
   scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 .hero img {
@@ -279,14 +279,24 @@ nav ul li {
 }
 
 /* Projects */
-.projects {
-  padding: 0 1rem;
+.projects-section {
   margin-bottom: var(--bottom-margin);
   scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-pic {
-  width: 60%;
+  width: 100%;
   align-items: center;
   margin-bottom: var(--bottom-margin);
 }
@@ -313,7 +323,6 @@ nav ul li {
 }
 
 .projects h3 {
-  text-align: center;
   color: var(--primary-color);
   font-size: var(--mobile-font-size-h3);
   font-weight: var(--bold-font);
@@ -322,11 +331,9 @@ nav ul li {
 .project-container {
   text-align: center;
   width: 90%;
-  padding: 1rem;
 }
 
 .project-container p {
-  padding: 1rem;
   text-align: left;
   color: black;
   font-weight: var(--normal-font);
@@ -346,7 +353,11 @@ nav ul li {
   background-color: var(--primary-shadow);
   border-radius: 10px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.project-icon {
+  width: 10%;
 }
 
 /* Contact */
@@ -512,6 +523,9 @@ footer a:hover {
     width: 10.2rem;
     height: 10.2rem;
   }
+  .project-pic {
+    width: 60%;
+  }
   .projects h2 {
     font-size: var(--tablet-font-size-h2);
   }
@@ -595,17 +609,11 @@ footer a:hover {
     width: 12.2rem;
     height: 12.2rem;
   }
-  .projects {
-    padding: 0 30rem;
-  }
   .projects h2 {
     font-size: var(--desktop-font-size-h2);
   }
   .projects h3 {
     font-size: var(--desktop-font-size-h3);
-  }
-  .project-pic {
-    width: 20%;
   }
   .project-container p {
     font-size: var(--desktop-font-size);
