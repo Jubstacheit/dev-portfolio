@@ -226,20 +226,14 @@ nav ul li {
 
 .skill-container {
   display: flex;
-  flex-direction: row;
-}
-
-.skills-title-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px 10px 3rem;
-  padding: 0 2rem;
+  flex-direction: column;
+  text-align: center;
 }
 
 .skills-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 1rem;
 }
 
 .skills-wrapper img {
