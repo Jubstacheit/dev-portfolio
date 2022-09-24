@@ -167,7 +167,7 @@ nav ul li {
 }
 
 .bio a {
-  color: var(--secondary-shadow);
+  color: var(--primary-color);
   font-weight: var(--bold-font);
   font-size: var(--mobile-font-size);
 }
