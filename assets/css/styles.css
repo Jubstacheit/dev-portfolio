@@ -191,12 +191,19 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-shadow);
+  color: var(--primary-color);
+  background-color: transparent;
   font-size: var(--mobile-font-size-h3);
   font-weight: var(--bold-font);
   font-family: "JetBrains Mono", sans-serif;
   transition: var(--transition);
   border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+}
+
+.CV-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* Top skills and icons*/
@@ -282,17 +289,18 @@ nav ul li {
   margin-right: auto;
   margin-left: auto;
   padding-top: 5rem;
-  width: 70%;
+  width: 100%;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 1rem;
 }
 
 .project-pic {
-  width: 70%;
+  width: 100%;
   align-items: center;
   margin-bottom: var(--bottom-margin);
   border-radius: 1rem;
@@ -328,7 +336,7 @@ nav ul li {
 
 .project-container {
   text-align: center;
-  width: 90%;
+  width: 100%;
 }
 
 .project-container p {
@@ -353,22 +361,6 @@ nav ul li {
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 2rem;
   margin-bottom: 5rem;
-}
-
-.project-icon {
-  width: 30%;
-  visibility: hidden;
-  margin-left: 1rem;
-  position: absolute;
-  left: 0;
-}
-
-.project-card:hover .project-icon {
-  visibility: visible;
-}
-
-.project-icon img {
-  border-radius: 1rem;
 }
 
 /* Contact */
@@ -397,7 +389,7 @@ nav ul li {
   color: var(--primary-color);
 }
 
-.contact-form-container textarea {
+.form-control textarea {
   min-height: 3rem;
   font-weight: var(--normal-font);
 }
@@ -409,13 +401,12 @@ nav ul li {
   padding-left: 10px;
   border-radius: 10px;
   font-size: var(--mobile-font-size);
-  outline: none;
   background-color: var(--primary-shadow);
   font-family: "JetBrains Mono", sans-serif;
 }
 
 .input-field::placeholder {
-  color: black;
+  color: var(--primary-color);
   font-family: "JetBrains Mono", sans-serif;
 }
 
@@ -423,12 +414,14 @@ nav ul li {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: var(--primary-shadow);
-  font-size: var(--mobile-font-size);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: var(--mobile-font-size-h3);
   font-weight: var(--bold-font);
   font-family: "JetBrains Mono", sans-serif;
   transition: var(--transition);
   border-radius: 10px;
+  border: 2px solid var(--secondary-color);
 }
 
 .submit-btn:hover {
@@ -517,6 +510,9 @@ footer a:hover {
   .bio a {
     font-size: var(--tablet-font-size);
   }
+  .CV-btn {
+    font-size: var(--tablet-font-size-h3);
+  }
   .skills h2 {
     font-size: var(--tablet-font-size-h2);
   }
@@ -531,8 +527,11 @@ footer a:hover {
     width: 10.2rem;
     height: 10.2rem;
   }
+  .projects {
+    max-width: 80%;
+  }
   .project-pic {
-    width: 60%;
+    max-width: 800px;
   }
   .projects h2 {
     font-size: var(--tablet-font-size-h2);
@@ -540,17 +539,20 @@ footer a:hover {
   .projects h3 {
     font-size: var(--tablet-font-size-h3);
   }
-  .project-container p {
+  .project-details p {
     font-size: var(--tablet-font-size);
   }
   .contact h2 {
     font-size: var(--tablet-font-size-h2);
   }
+  .contact-form-container .input-field {
+    font-size: var(--mobile-font-size);
+  }
   .contact-form-container label {
     font-size: var(--tablet-font-size-h3);
   }
   .submit-btn {
-    font-size: var(--mobile-font-size-h3);
+    font-size: var(--tablet-font-size-h3);
   }
   footer p {
     font-size: 13px;
@@ -605,6 +607,9 @@ footer a:hover {
   .bio a {
     font-size: var(--desktop-font-size);
   }
+  .CV-btn {
+    font-size: var(--desktop-font-size-h3);
+  }
   .skills h2 {
     font-size: var(--desktop-font-size-h2);
   }
@@ -619,20 +624,29 @@ footer a:hover {
     width: 12.2rem;
     height: 12.2rem;
   }
+  .projects {
+    max-width: 70%;
+  }
+  .project-pic {
+    max-width: 900px;
+  }
   .projects h2 {
     font-size: var(--desktop-font-size-h2);
   }
   .projects h3 {
     font-size: var(--desktop-font-size-h3);
   }
-  .project-container p {
+  .project-details p {
     font-size: var(--desktop-font-size);
   }
   .contact-form-container {
-    width: 40%;
+    width: 50%;
   }
   .contact h2 {
     font-size: var(--desktop-font-size-h2);
+  }
+  .contact-form-container .input-field {
+    font-size: var(--tablet-font-size);
   }
   .contact-form-container label {
     font-size: var(--desktop-font-size-h3);
