@@ -491,10 +491,10 @@ footer a:hover
     max-width: 800px
   .projects h2
     font-size: var(--tablet-font-size-h2)
+  .project-container p
+    font-size: var(--tablet-font-size)
   .projects h3
     font-size: var(--tablet-font-size-h3)
-  .project-details p
-    font-size: var(--tablet-font-size)
   .contact h2
     font-size: var(--tablet-font-size-h2)
   .contact-form-container .input-field
@@ -560,7 +560,7 @@ footer a:hover
     font-size: var(--desktop-font-size-h2)
   .projects h3
     font-size: var(--desktop-font-size-h3)
-  .project-details p
+  .project-container p
     font-size: var(--desktop-font-size)
   .contact-form-container
     width: 50%
@@ -582,3 +582,21 @@ footer a:hover
   .up-arrow
     width: 5rem
     height: 5rem
+
+@media (prefers-color-scheme: light)
+  \:root
+    --bg-color: rgba(221, 92, 247, 0.25)
+    --primary-color: rgb(94, 0, 98)
+    --secondary-color: rgba(141, 81, 144, 0.7)
+    --primary-shadow: rgba(250, 190, 7, 0.2)
+    --secondary-shadow: rgba(212, 192, 80, 0.2)
+
+  nav
+    background-color: rgb(165, 122, 255)
+
+  nav a:hover
+    color: var(--primary-color)
+    border-bottom: 3px solid var(--primary-color)
+
+  footer
+    background-color: #a57aff
