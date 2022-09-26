@@ -29,7 +29,7 @@
   --desktop-font-size: 20px
   --desktop-font-size-h1: 36px
   --desktop-font-size-h2: 31px
-  --desktop-font-size-h3: 26
+  --desktop-font-size-h3: 26px
 
   // All colors //
   --bg-color: rgb(8, 0, 8)
@@ -38,12 +38,12 @@
   --primary-shadow: rgb(200, 198, 178)
   --secondary-shadow: rgb(166, 147, 78)
   --footer-color: black
-  --bg-color-light: rgba(221, 92, 247, 0.25)
+  --bg-color-light: rgba(242, 219, 255, 0.85)
   --primary-color-light: rgb(94, 0, 98)
   --secondary-color-light: rgba(141, 81, 144, 0.7)
   --primary-shadow-light: rgba(250, 190, 7, 0.2)
-  --secondary-shadow-lighy: rgba(212, 192, 80, 0.2)
-  --footer-color-light: #a57aff
+  --secondary-shadow-light: rgba(212, 192, 80, 0.2)
+  --footer-color-light: #b861ff
 
   // Currently used color //
 
@@ -58,6 +58,32 @@
   --line-height: 1.7rem
   --transition: 0.3s
 
+.light-mode
+  background-color: var(--bg-color-light)
+  --cur-pri-color: var(--primary-color-light)
+  --cur-sec-color: var(--secondary-color-light)
+  --cur-pri-shadow: var(--primary-shadow-light)
+  --cur-sec-shadow: var(--secondary-shadow-light)
+  transition: var(--transition)
+
+.light-mode nav
+  --cur-footer: var(--footer-color-light)
+  transition: var(--transition)
+
+.light-mode .hero .bio-text
+  --cur-pri-color: var(--primary-color-light)
+  --cur-sec-color: var(--secondary-color-light)
+  --cur-pri-shadow: var(--primary-shadow-light)
+  --cur-sec-shadow: var(--secondary-shadow-light)
+  transition: var(--transition)
+
+.light-mode footer
+  --cur-footer: var(--footer-color-light)
+  transition: var(--transition)
+
+.light-mode footer a
+  color: var(--primary-color-light)
+
 html
   scroll-behavior: smooth
   scroll-padding-top: 8rem
@@ -70,7 +96,7 @@ html
 
 body
   font-family: var(--font-family)
-
+  transition: var(--transition)
 
 /* Nav */
 
@@ -96,6 +122,7 @@ nav
   padding: 1rem 1rem
   background-color: var(--cur-footer)
   margin-bottom: 1rem
+  transition: var(--transition)
 
 nav h1
   color: var(--cur-pri-color)
@@ -203,6 +230,7 @@ nav ul li
   transition: var(--transition)
   border-radius: 10px
   border: 2px solid var(--cur-sec-color)
+  cursor: pointer
 
 .CV-btn:hover
   background-color: var(--cur-sec-color)
@@ -375,6 +403,7 @@ nav ul li
   max-width: 80%
   margin: 0 auto
   border-radius: 5px
+  border: transparent
 
 
 .contact-form-container label
@@ -387,6 +416,7 @@ nav ul li
 .form-control textarea
   min-height: 3rem
   font-weight: var(--normal-font)
+  border: transparent
 
 
 .contact-form-container .input-field
@@ -398,6 +428,7 @@ nav ul li
   font-size: var(--mobile-font-size)
   background-color: var(--cur-pri-shadow)
   font-family: "JetBrains Mono", sans-serif
+  border: transparent
 
 
 .input-field::placeholder
@@ -445,6 +476,7 @@ footer
   padding: 1.25rem
   text-align: center
   margin: 2rem 0 0
+  transition: var(--transition)
 
 footer p
   font-size: 11px
@@ -459,7 +491,6 @@ footer a
 footer a:hover
   color: var(--cur-sec-color)
   border-bottom: 2px solid var(--cur-sec-color)
-
 
 /* MEDIA QUERIES AND BREAKPOINTS */
 
