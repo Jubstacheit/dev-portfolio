@@ -29,12 +29,31 @@
   --desktop-font-size: 20px
   --desktop-font-size-h1: 36px
   --desktop-font-size-h2: 31px
-  --desktop-font-size-h3: 26px
+  --desktop-font-size-h3: 26
+
+  // All colors //
   --bg-color: rgb(8, 0, 8)
   --primary-color: rgb(222, 71, 222)
   --secondary-color: rgb(125, 51, 214)
   --primary-shadow: rgb(200, 198, 178)
   --secondary-shadow: rgb(166, 147, 78)
+  --footer-color: black
+  --bg-color-light: rgba(221, 92, 247, 0.25)
+  --primary-color-light: rgb(94, 0, 98)
+  --secondary-color-light: rgba(141, 81, 144, 0.7)
+  --primary-shadow-light: rgba(250, 190, 7, 0.2)
+  --secondary-shadow-lighy: rgba(212, 192, 80, 0.2)
+  --footer-color-light: #a57aff
+
+  // Currently used color //
+
+  --cur-bg: var(--bg-color)
+  --cur-pri-color: var(--primary-color)
+  --cur-sec-color: var(--secondary-color)
+  --cur-pri-shadow: var(--primary-shadow)
+  --cur-sec-shadow: var(--secondary-shadow)
+  --cur-footer: var(--footer-color)
+
   --bottom-margin: 1rem
   --line-height: 1.7rem
   --transition: 0.3s
@@ -42,7 +61,7 @@
 html
   scroll-behavior: smooth
   scroll-padding-top: 8rem
-  background-color: var(--bg-color)
+  background-color: var(--cur-bg)
 
 *
   margin: 0
@@ -61,10 +80,10 @@ ul
 a
   font-size: var(--mobile-font-size)
   text-decoration: none
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
 
 a:hover
-  color: var(--secondary-color)
+  color: var(--cur-sec-color)
 
 nav
   position: sticky
@@ -75,32 +94,32 @@ nav
   flex-direction: column
   align-items: center
   padding: 1rem 1rem
-  background-color: black
+  background-color: var(--cur-footer)
   margin-bottom: 1rem
 
 nav h1
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   text-align: center
   font-size: var(--mobile-font-size-h1)
   font-weight: var(--bolder-font)
 
 nav a
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   transition: var(--transition)
 
 nav a:hover
-  color: var(--secondary-color)
-  border-bottom: 2px solid var(--secondary-color)
+  color: var(--cur-sec-color)
+  border-bottom: 2px solid var(--cur-sec-color)
   font-size: calc(var(--mobile-font-size) + 3px)
 
 nav a:active
-  color: var(--primary-shadow)
+  color: var(--cur-pri-shadow)
   transition: 0s
 
 nav ul
   display: flex
   justify-content: space-around
-  width: 95%
+  width: 100%
   gap: 1rem
   padding-top: 1rem
 
@@ -138,16 +157,16 @@ nav ul li
 
 .bio h2
   margin-bottom: var(--bottom-margin)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   text-align: center
   font-size: var(--mobile-font-size-h2)
   font-weight: var(--bold-font)
 
 .bio ul
   list-style-type: disc
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   text-align: left
-  background-color: var(--primary-shadow)
+  background-color: var(--cur-pri-shadow)
   border-radius: 1rem
   padding: 0.5rem 2rem
   line-height: var(--line-height)
@@ -155,14 +174,14 @@ nav ul li
   font-size: var(--mobile-font-size)
 
 .bio a
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-weight: var(--bold-font)
   font-size: var(--mobile-font-size)
 
 .bio a:hover
   transition: var(--transition)
-  color: var(--secondary-color)
-  border-bottom: 2px solid var(--secondary-color)
+  color: var(--cur-sec-color)
+  border-bottom: 2px solid var(--cur-sec-color)
 
 .CV-container
   display: flex
@@ -176,18 +195,18 @@ nav ul li
   display: flex
   align-items: center
   justify-content: center
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   background-color: transparent
   font-size: var(--mobile-font-size-h3)
   font-weight: var(--bold-font)
   font-family: "JetBrains Mono", sans-serif
   transition: var(--transition)
   border-radius: 10px
-  border: 2px solid var(--secondary-color)
+  border: 2px solid var(--cur-sec-color)
 
 .CV-btn:hover
-  background-color: var(--secondary-color)
-  color: var(--primary-color)
+  background-color: var(--cur-sec-color)
+  color: var(--cur-pri-color)
 
 /* Top skills and icons*/
 
@@ -201,12 +220,12 @@ nav ul li
 .skills h2
   font-size: var(--mobile-font-size-h2)
   font-weight: var(--bold-font)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
 
 .skills h3
   font-size: var(--mobile-font-size-h3)
   font-weight: var(--bold-font)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
 
 
 .skill-header
@@ -238,9 +257,9 @@ nav ul li
 
 
 .icon-card
-  background-color: var(--primary-shadow)
+  background-color: var(--cur-pri-shadow)
   border-radius: 15px
-  box-shadow: 0 0 10px var(--secondary-shadow)
+  box-shadow: 0 0 10px var(--cur-sec-shadow)
 
 
 /* Scroll up arrow */
@@ -284,7 +303,7 @@ nav ul li
   align-items: center
   margin-bottom: var(--bottom-margin)
   border-radius: 1rem
-  border: 5px solid var(--primary-color)
+  border: 5px solid var(--cur-pri-color)
 
 .projects-container
   display: flex
@@ -301,12 +320,12 @@ nav ul li
   font-size: var(--mobile-font-size-h2)
 
 .projects h2
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-weight: var(--bold-font)
   font-size: var(--mobile-font-size-h2)
 
 .projects h3
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-size: var(--mobile-font-size-h3)
   font-weight: var(--bold-font)
 
@@ -333,9 +352,9 @@ nav ul li
 
 
 .project-card
-  background-color: var(--primary-shadow)
+  background-color: var(--cur-pri-shadow)
   border-radius: 10px
-  box-shadow: 0 3px 10px var(--primary-shadow)
+  box-shadow: 0 3px 10px var(--cur-pri-shadow)
   padding: 2rem
   margin-bottom: 5rem
 
@@ -347,7 +366,7 @@ nav ul li
 .contact h2
   text-align: center
   margin-bottom: var(--bottom-margin-2)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-size: var(--mobile-font-size-h2)
   font-weight: var(--bold-font)
 
@@ -362,7 +381,7 @@ nav ul li
   line-height: 2.7rem
   font-size: var(--mobile-font-size-h3)
   font-weight: var(--bold-font)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
 
 
 .form-control textarea
@@ -377,12 +396,12 @@ nav ul li
   padding-left: 10px
   border-radius: 10px
   font-size: var(--mobile-font-size)
-  background-color: var(--primary-shadow)
+  background-color: var(--cur-pri-shadow)
   font-family: "JetBrains Mono", sans-serif
 
 
 .input-field::placeholder
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-family: "JetBrains Mono", sans-serif
 
 .submit-btn
@@ -390,17 +409,17 @@ nav ul li
   padding: 10px
   margin: 10px 0
   background-color: transparent
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
   font-size: var(--mobile-font-size-h3)
   font-weight: var(--bold-font)
   font-family: "JetBrains Mono", sans-serif
   transition: var(--transition)
   border-radius: 10px
-  border: 2px solid var(--secondary-color)
+  border: 2px solid var(--cur-sec-color)
 
 
 .submit-btn:hover
-  background-color: var(--secondary-color)
+  background-color: var(--cur-sec-color)
   cursor: pointer
 
 
@@ -422,7 +441,7 @@ nav ul li
 /* Footer */
 
 footer
-  background-color: black
+  background-color: var(--cur-footer)
   padding: 1.25rem
   text-align: center
   margin: 2rem 0 0
@@ -430,16 +449,16 @@ footer
 footer p
   font-size: 11px
   font-weight: var(--normal-font)
-  color: var(--primary-color)
+  color: var(--cur-pri-color)
 
 footer a
   font-size: 11px
-  color: var(--primary-shadow)
+  color: var(--cur-pri-shadow)
   transition: var(--transition)
 
 footer a:hover
-  color: var(--secondary-color)
-  border-bottom: 2px solid var(--secondary-color)
+  color: var(--cur-sec-color)
+  border-bottom: 2px solid var(--cur-sec-color)
 
 
 /* MEDIA QUERIES AND BREAKPOINTS */
@@ -582,21 +601,3 @@ footer a:hover
   .up-arrow
     width: 5rem
     height: 5rem
-
-@media (prefers-color-scheme: light)
-  \:root
-    --bg-color: rgba(221, 92, 247, 0.25)
-    --primary-color: rgb(94, 0, 98)
-    --secondary-color: rgba(141, 81, 144, 0.7)
-    --primary-shadow: rgba(250, 190, 7, 0.2)
-    --secondary-shadow: rgba(212, 192, 80, 0.2)
-
-  nav
-    background-color: rgb(165, 122, 255)
-
-  nav a:hover
-    color: var(--primary-color)
-    border-bottom: 3px solid var(--primary-color)
-
-  footer
-    background-color: #a57aff
