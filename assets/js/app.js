@@ -8,3 +8,11 @@ scrollUp.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// light or dark theme //
+
+function lightMode() {
+    const element = document.body;
+    element.classList.toggle("light-mode");
+    element.classList.toggle("light-mode2")
+}
