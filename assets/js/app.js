@@ -13,6 +13,15 @@ scrollUp.addEventListener("click", () => {
 
 function lightMode() {
     const element = document.body;
+    const image = document.getElementById("theme-icon");
     element.classList.toggle("light-mode");
-    element.classList.toggle("light-mode2")
+
+        if (image.getAttribute('src') === "assets/icons/icons8-light-on-96.png")
+        {
+            image.src = "assets/icons/icons8-light-96.png";
+        }
+        else
+        {
+            image.src = "assets/icons/icons8-light-on-96.png";
+        }
 }
