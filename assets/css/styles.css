@@ -72,6 +72,10 @@
   transition: var(--transition);
 }
 
+.light-mode .hero a {
+  transition: var(--transition);
+}
+
 .light-mode footer {
   --cur-footer: var(--footer-color-light);
   transition: var(--transition);
@@ -79,6 +83,7 @@
 
 .light-mode footer a {
   color: var(--primary-color-light);
+  transition: var(--transition);
 }
 
 html {
@@ -315,6 +320,7 @@ nav ul li {
 
 /* Scroll up arrow */
 .scroll-up {
+  display: flex;
   position: fixed;
   right: 0.5%;
   bottom: 3%;
@@ -486,9 +492,24 @@ nav ul li {
   position: fixed;
   right: 1%;
   bottom: 50%;
+  cursor: pointer;
 }
 
 .socicon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Change theme */
+.change-mode {
+  display: flex;
+  position: fixed;
+  right: 1%;
+  top: 12%;
+  cursor: pointer;
+}
+
+.mode-switch {
   width: 3.5rem;
   height: 3.5rem;
 }
@@ -577,6 +598,9 @@ footer a:hover {
   .icon:hover {
     width: 10.2rem;
     height: 10.2rem;
+  }
+  .change-mode {
+    top: 14%;
   }
   .projects {
     max-width: 80%;
@@ -710,6 +734,10 @@ footer a:hover {
   }
   footer a {
     font-size: 15px;
+  }
+  .mode-switch {
+    width: 5rem;
+    height: 5rem;
   }
   .socicon {
     width: 5rem;
