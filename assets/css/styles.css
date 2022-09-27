@@ -505,7 +505,7 @@ nav ul li {
   display: flex;
   position: fixed;
   right: 1%;
-  top: 12%;
+  top: 15%;
   cursor: pointer;
 }
 
@@ -598,9 +598,6 @@ footer a:hover {
   .icon:hover {
     width: 10.2rem;
     height: 10.2rem;
-  }
-  .change-mode {
-    top: 14%;
   }
   .projects {
     max-width: 80%;
