@@ -25,3 +25,23 @@ function lightMode() {
             image.src = "assets/icons/icons8-light-on-96.png";
         }
 }
+
+// Animate when scrolling //
+
+const observer = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+        // If element is visible
+        if (entry.isIntersecting) {
+            // Anim class
+            entry.target.classList.add('appear-anim');
+        }
+    });
+});
+
+// Which element the observer will track
+observer.observe(document.querySelector('.hero'));
+observer.observe(document.querySelector('.skills'));
+observer.observe(document.querySelector('.projects-section'));
+observer.observe(document.querySelector('.contact'));
+observer.observe(document.querySelector('.CV-btn'));
