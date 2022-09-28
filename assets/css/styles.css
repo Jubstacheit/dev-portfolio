@@ -96,8 +96,22 @@
     transform: scale(1);
   }
 }
+@keyframes icon-anim {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .appear-anim {
   animation: appear 0.5s 1;
+}
+
+.icon-anim {
+  animation: icon-anim 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
 }
 
 html {

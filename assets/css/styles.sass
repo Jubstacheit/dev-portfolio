@@ -98,8 +98,19 @@
     opacity: 1
     transform: scale(1)
 
+@keyframes icon-anim
+  from
+    transform: translateX(-50px)
+    opacity: 0
+  to
+    transform: translateX(0)
+    opacity: 1
+
 .appear-anim
   animation: appear 0.5s 1
+
+.icon-anim
+  animation: icon-anim 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0.5s both
 
 html
   scroll-behavior: smooth
