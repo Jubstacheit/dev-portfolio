@@ -330,14 +330,14 @@ nav ul li {
 }
 
 .icon {
-  width: 7rem;
-  height: 7rem;
+  width: 80px;
+  height: 80px;
   transition: var(--transition);
 }
 
 .icon:hover {
-  width: 7.2rem;
-  height: 7.2rem;
+  width: 90px;
+  height: 90px;
   transition: var(--transition);
 }
 
@@ -621,12 +621,12 @@ footer a:hover {
     font-size: var(--tablet-font-size-h3);
   }
   .icon {
-    width: 10rem;
-    height: 10rem;
+    width: 140px;
+    height: 140px;
   }
   .icon:hover {
-    width: 10.2rem;
-    height: 10.2rem;
+    width: 150px;
+    height: 150px;
   }
   .projects {
     max-width: 80%;
@@ -716,14 +716,6 @@ footer a:hover {
   }
   .skills h3 {
     font-size: var(--desktop-font-size-h3);
-  }
-  .icon {
-    width: 12rem;
-    height: 12rem;
-  }
-  .icon:hover {
-    width: 12.2rem;
-    height: 12.2rem;
   }
   .projects {
     max-width: 70%;
