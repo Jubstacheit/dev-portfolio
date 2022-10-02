@@ -76,14 +76,6 @@
   transition: var(--transition);
 }
 
-.light-mode .dark-badge {
-  display: none;
-}
-
-.light-mode .light-badge {
-  display: flex;
-}
-
 .light-mode footer {
   --cur-footer: var(--footer-color-light);
   transition: var(--transition);
@@ -293,24 +285,6 @@ nav ul li {
 .CV-btn:hover {
   background-color: var(--cur-sec-color);
   color: var(--cur-pri-color);
-}
-
-.badge-base {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 310px;
-  margin: 100px auto 0;
-  transition: var(--transition);
-}
-
-.badge-base:hover {
-  transform: scale(1.05);
-  transition: var(--transition);
-}
-
-.light-badge {
-  display: none;
 }
 
 /* Top skills and icons*/
